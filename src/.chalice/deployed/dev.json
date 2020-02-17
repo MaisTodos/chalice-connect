@@ -1,0 +1,22 @@
+{
+  "resources": [
+    {
+      "name": "default-role",
+      "resource_type": "iam_role",
+      "role_arn": "arn:aws:iam::292107540214:role/connect-dev",
+      "role_name": "connect-dev"
+    },
+    {
+      "name": "send_to_slack",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:us-east-1:292107540214:function:connect-dev-send_to_slack"
+    },
+    {
+      "name": "send_to_slack-event",
+      "resource_type": "cloudwatch_event",
+      "rule_name": "connect-dev-send_to_slack-event"
+    }
+  ],
+  "schema_version": "2.0",
+  "backend": "api"
+}

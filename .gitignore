@@ -3,8 +3,14 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+.chalice/deployments/
+.chalice/venv/
+
+.DS_Store
+
 # C extensions
 *.so
+*config.json
 
 # Distribution / packaging
 .Python
