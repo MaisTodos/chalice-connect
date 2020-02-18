@@ -1,0 +1,15 @@
+{
+  "version": "2.0",
+  "app_name": "connect",
+  "stages": {
+    "dev": {
+      "lambda_memory_size": 512,
+      "api_gateway_stage": "api",
+      "environment_variables": {
+        "GILAB_PRIVATE_TOKEN": "YOUR_GITLAB_TOKEN",
+        "SLACK_CLIENT_TOKEN": "SLACK_CLIENT_TOKEN",
+        "SLACK_CLIENT_CHANNEL": "SLACK_CLIENT_CHANNEL"
+      }
+    }
+  }
+}
